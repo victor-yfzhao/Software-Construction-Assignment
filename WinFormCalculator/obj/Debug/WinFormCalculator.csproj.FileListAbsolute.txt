@@ -1,0 +1,11 @@
+E:\Codes\Software_Construction\Assignment1\WinFormCalculator\bin\Debug\WinFormCalculator.exe.config
+E:\Codes\Software_Construction\Assignment1\WinFormCalculator\bin\Debug\WinFormCalculator.exe
+E:\Codes\Software_Construction\Assignment1\WinFormCalculator\bin\Debug\WinFormCalculator.pdb
+E:\Codes\Software_Construction\Assignment1\WinFormCalculator\obj\Debug\WinFormCalculator.csproj.AssemblyReference.cache
+E:\Codes\Software_Construction\Assignment1\WinFormCalculator\obj\Debug\WinFormCalculator.csproj.SuggestedBindingRedirects.cache
+E:\Codes\Software_Construction\Assignment1\WinFormCalculator\obj\Debug\WinFormCalculator.WinFormCal.resources
+E:\Codes\Software_Construction\Assignment1\WinFormCalculator\obj\Debug\WinFormCalculator.Properties.Resources.resources
+E:\Codes\Software_Construction\Assignment1\WinFormCalculator\obj\Debug\WinFormCalculator.csproj.GenerateResource.cache
+E:\Codes\Software_Construction\Assignment1\WinFormCalculator\obj\Debug\WinFormCalculator.csproj.CoreCompileInputs.cache
+E:\Codes\Software_Construction\Assignment1\WinFormCalculator\obj\Debug\WinFormCalculator.exe
+E:\Codes\Software_Construction\Assignment1\WinFormCalculator\obj\Debug\WinFormCalculator.pdb

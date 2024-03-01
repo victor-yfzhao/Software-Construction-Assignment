@@ -1,0 +1,15 @@
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\bin\Debug\net6.0\ConsoleCalculator.exe
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\bin\Debug\net6.0\ConsoleCalculator.deps.json
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\bin\Debug\net6.0\ConsoleCalculator.runtimeconfig.json
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\bin\Debug\net6.0\ConsoleCalculator.dll
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\bin\Debug\net6.0\ConsoleCalculator.pdb
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\obj\Debug\net6.0\ConsoleCalculator.csproj.AssemblyReference.cache
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\obj\Debug\net6.0\ConsoleCalculator.GeneratedMSBuildEditorConfig.editorconfig
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\obj\Debug\net6.0\ConsoleCalculator.AssemblyInfoInputs.cache
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\obj\Debug\net6.0\ConsoleCalculator.AssemblyInfo.cs
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\obj\Debug\net6.0\ConsoleCalculator.csproj.CoreCompileInputs.cache
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\obj\Debug\net6.0\ConsoleCalculator.dll
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\obj\Debug\net6.0\refint\ConsoleCalculator.dll
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\obj\Debug\net6.0\ConsoleCalculator.pdb
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\obj\Debug\net6.0\ConsoleCalculator.genruntimeconfig.cache
+E:\Codes\Software_Construction\Assignment1\ConsoleCalculator\obj\Debug\net6.0\ref\ConsoleCalculator.dll

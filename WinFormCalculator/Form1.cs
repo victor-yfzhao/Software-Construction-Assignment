@@ -24,10 +24,10 @@ namespace WinFormCalculator
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            int num1, num2;
+            int num1 = 0, num2 = 0;
             string ans = "";
-            num1 = Int32.Parse(opNum1.Text);
-            num2 = Int32.Parse(opNum2.Text);
+            num1 = opNum1.Text != "" ? Int32.Parse(opNum1.Text) : 0;
+            num2 = opNum2.Text != "" ? Int32.Parse(opNum2.Text) : 0;
             foreach (var rb in OperatorChoises.Controls)
             {
                 if (rb is RadioButton)

@@ -24,10 +24,10 @@ namespace WinFormCalculator
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            int num1 = 0, num2 = 0;
+            decimal num1 = 0, num2 = 0;
             string ans = "";
-            num1 = opNum1.Text != "" ? Int32.Parse(opNum1.Text) : 0;
-            num2 = opNum2.Text != "" ? Int32.Parse(opNum2.Text) : 0;
+            num1 = opNum1.Text != "" ? Decimal.Parse(opNum1.Text) : 0;
+            num2 = opNum2.Text != "" ? Decimal.Parse(opNum2.Text) : 0;
             foreach (var rb in OperatorChoises.Controls)
             {
                 if (rb is RadioButton)
@@ -43,7 +43,7 @@ namespace WinFormCalculator
             Ans.Text = ans;
         }
 
-        private string CalculateAnswer(int num1, int num2, string op)
+        private string CalculateAnswer(decimal num1, decimal num2, string op)
         {
             switch (op)
             {

@@ -17,6 +17,10 @@ namespace Task1
         public Circle(double r)
         {
             this.r = r;
+            if (!isLegal())
+            {
+                throw new Exception("Illegal Circle!");
+            }
             s = Math.PI * r * r;
         }
 
@@ -25,10 +29,9 @@ namespace Task1
             return s;
         }
 
-        //不太懂除了三角形其他类为啥要做合法判断。。。
         public bool isLegal()
         {
-            return true;
+            return r != 0;
         }
     }
 
@@ -41,6 +44,10 @@ namespace Task1
         {
             this.l = l;
             this.w = w;
+            if (!isLegal())
+            {
+                throw new Exception("Illegal Rectangle!");
+            }
             s = l * w;
         }
 
@@ -52,7 +59,7 @@ namespace Task1
         //不太懂除了三角形其他类为啥要做合法判断。。。
         public bool isLegal()
         {
-            return true;
+            return (l != 0) && (w != 0);
         }
     }
 
@@ -92,17 +99,40 @@ namespace Task1
     {
         static void Main()
         {
-            Circle c = new Circle(5.0);
-            Console.WriteLine(c.getArea());
-            Rectangle r = new Rectangle(3.0, 4.0);
-            Console.WriteLine(r.getArea());
+            Shape s;
+
             try
             {
-                Triangle t1 = new Triangle(3.0, 4.0, 5.0);
-                Console.WriteLine(t1.getArea());
-                Triangle t2 = new Triangle(1.0, 2.0, 3.0);
-                Console.WriteLine(t2.getArea());
-            }catch(Exception e)
+                s = new Circle(5.0);
+                Console.WriteLine(s.getArea());
+                s = new Circle(0.0);
+                Console.WriteLine(s.getArea());
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            try
+            {
+                s = new Rectangle(3.0, 4.0);
+                Console.WriteLine(s.getArea());
+                s = new Rectangle(0.0, 0.0);
+                Console.WriteLine(s.getArea());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            try
+            {
+                s = new Triangle(3.0, 4.0, 5.0);
+                Console.WriteLine(s.getArea());
+                s = new Triangle(1.0, 2.0, 3.0);
+                Console.WriteLine(s.getArea());
+            }
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }

@@ -1,4 +1,7 @@
-﻿namespace Task1
+﻿using System.Runtime.ConstrainedExecution;
+using System.Transactions;
+
+namespace Task1
 {
     interface Shape
     {

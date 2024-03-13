@@ -101,6 +101,7 @@ namespace Task1
         {
             Shape s;
 
+            //圆形测试
             try
             {
                 s = new Circle(5.0);
@@ -113,6 +114,7 @@ namespace Task1
                 Console.WriteLine(e.Message);
             }
 
+            //矩形测试
             try
             {
                 s = new Rectangle(3.0, 4.0);
@@ -125,6 +127,7 @@ namespace Task1
                 Console.WriteLine(e.Message);
             }
 
+            //三角形测试
             try
             {
                 s = new Triangle(3.0, 4.0, 5.0);

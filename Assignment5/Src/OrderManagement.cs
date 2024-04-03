@@ -24,6 +24,7 @@ namespace Assignment5.Src
 
         public Order CreateOrder(string [] detail)
         {
+            if (detail.Length != 3) throw new Exception("Unable to create order for invalid input!");
             Order _order = new Order(new OrderDetails(detail[0], detail[1], Convert.ToInt32(detail[2])));
             orders.Add(_order);
             return _order;
@@ -78,8 +79,10 @@ namespace Assignment5.Src
                 if (order.GetId() == id)
                 {
                     orders.Remove(order);
+                    return;
                 }
             }
+            throw new Exception("Unable to find order whose id is: " + id);
         }
     }
 }

@@ -8,8 +8,30 @@ namespace Assignment5.Src
 {
     public class Order
     {
-        private int id;
-        private OrderDetails detail;
+        public int id { set; get; }
+        public OrderDetails detail { set; get; }
+
+        public string ItemName { get
+            {
+                return detail.itemName;
+            } 
+        }
+
+        public string CustomerName
+        {
+            get
+            {
+                return detail.customerName;
+            }
+        }
+
+        public int ItemValue
+        {
+            get
+            {
+                return detail.itemValue;
+            }
+        }
 
         public Order()
         {

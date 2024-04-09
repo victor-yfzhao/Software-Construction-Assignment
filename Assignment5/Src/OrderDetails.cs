@@ -16,11 +16,22 @@ namespace Assignment5.Src
     
     public class OrderDetails
     {
-        private string itemName = "";
-        private string customerName = "";
-        private int itemValue = 0;
+        public string itemName { get; set; }
+        public string customerName { get; set; }
+        public int itemValue { get; set; }
 
-        public OrderDetails() { }
+        public string ItemName { get
+            {
+                return itemName;
+            }
+        }
+
+        public OrderDetails() 
+        {
+            itemName = "";
+            customerName = "";
+            itemValue = 0;
+        }
 
         public OrderDetails(string _itemName, string _customerName, int _itemValue)
         {
@@ -30,14 +41,14 @@ namespace Assignment5.Src
             customerName = _customerName;
             itemValue = _itemValue;
         }
-
+/*
         public override string ToString()
         {
             return "Item Name: \t" + itemName +
                 "\nCustomer Name: \t" + customerName +
                 "\nItem Value: \t" + itemValue + "\n";
         }
-
+*/
         public void ModifyOrder(DetailType type, string modify)
         {
             if (modify == null) throw new ArgumentNullException();

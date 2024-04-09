@@ -8,9 +8,9 @@ namespace Assignment5.Src
 {
      public class OrderManagement
      {
-        private List<Order> orders;
+        public List<Order> orders { set; get; }
         
-        private static OrderManagement INSTANCE = new OrderManagement();
+        private readonly static OrderManagement INSTANCE = new OrderManagement();
 
         private OrderManagement() 
         {
@@ -25,9 +25,16 @@ namespace Assignment5.Src
         public Order CreateOrder(string [] detail)
         {
             if (detail.Length != 3) throw new Exception("Unable to create order for invalid input!");
-            Order _order = new Order(new OrderDetails(detail[0], detail[1], Convert.ToInt32(detail[2])));
+            try
+            {
+                Order _order = new Order(new OrderDetails(detail[0], detail[1], Convert.ToInt32(detail[2])));
             orders.Add(_order);
             return _order;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public Order [] SearchOrderByDetail(DetailType type, string _detail)
